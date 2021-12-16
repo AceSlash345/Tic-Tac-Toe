@@ -1,0 +1,186 @@
+html{
+    user-select: none;
+}
+#gameBoard{
+    width:250px;
+    height:250px;
+    background-color: rgb(0, 0, 0);
+    display:grid;
+    grid-template-columns: 84px 84px 84px;
+    grid-template-rows: 84px 84px 84px;
+    padding: 10;
+    margin: 0  auto;
+
+}
+
+#box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9{
+    width:77px;
+    height:77px;
+    background:linear-gradient(30deg,green, rgb(0, 255, 0));
+    border:3px solid black;
+    cursor: pointer;
+    list-style-type: none;
+    animation-name: unselect;
+    animation-duration: .5s;
+    position:relative;
+}
+
+#box1:hover, #box2:hover, #box3:hover, #box4:hover, #box5:hover, #box6:hover, #box7:hover, #box8:hover, #box9:hover{
+    animation-name: select;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+#background{
+    width:500px;
+    height:500px;
+    margin-left: auto;
+    margin-right:auto;
+    padding-top:70px;
+    border-radius:20px;
+    background:linear-gradient(30deg,rgb(51, 211, 223), rgb(169, 255, 255));
+    border: 1px solid black;
+    
+}
+.placement{
+    font-size:50px;
+    position: relative;
+    left:20px;
+    top:8px;
+}
+.center{
+    text-align:center;
+}
+@keyframes select{
+    from {border: 3px solid black;}
+    to {border: 3px solid white;}
+}
+@keyframes unselect{
+    from {border: 3px solid white;}
+    to {border: 3px solid black;}
+}
+
+#boxy1{
+    animation-name:move;
+    animation-duration: 3s;
+    width:77px;
+    height:77px;
+    border:3px solid black;
+    cursor: pointer;
+    list-style-type: none;
+    position:relative;
+    animation-fill-mode: forwards;
+
+}
+#boxy2{
+    animation-delay: .5s;
+    animation-name:move;
+    animation-duration: 3s;
+    width:77px;
+    height:77px;
+    border:3px solid black;
+    cursor: pointer;
+    list-style-type: none;
+    position:relative;
+    animation-fill-mode: forwards;
+
+}
+#boxy3{
+    animation-delay: 1s;
+    animation-name:move;
+    animation-duration: 3s;
+    width:77px;
+    height:77px;
+    border:3px solid black;
+    cursor: pointer;
+    list-style-type: none;
+    position:relative;
+    animation-fill-mode: forwards;
+
+}
+#boxy4{
+    animation-delay: 2.5s;
+    animation-name:move2;
+    animation-duration: 3s;
+    width:77px;
+    height:77px;
+    border:3px solid black;
+    cursor: pointer;
+    list-style-type: none;
+    position:relative;
+    animation-fill-mode: forwards;
+
+}
+#boxy5{
+    animation-delay: 2s;
+    animation-name:move2;
+    animation-duration: 3s;
+    width:77px;
+    height:77px;
+    border:3px solid black;
+    cursor: pointer;
+    list-style-type: none;
+    position:relative;
+    animation-fill-mode: forwards;
+
+}
+#boxy6{
+    animation-delay: 1.5s;
+    animation-name:move2;
+    animation-duration: 3s;
+    width:77px;
+    height:77px;
+    border:3px solid black;
+    cursor: pointer;
+    list-style-type: none;
+    position:relative;
+    animation-fill-mode: forwards;
+
+}
+#boxy7{
+    animation-delay: 3s;
+    animation-name:move;
+    animation-duration: 3s;
+    width:77px;
+    height:77px;
+    border:3px solid black;
+    cursor: pointer;
+    list-style-type: none;
+    position:relative;
+    animation-fill-mode: forwards;
+
+}
+#boxy8{
+    animation-delay: 3.5s;
+    animation-name:move;
+    animation-duration: 3s;
+    width:77px;
+    height:77px;
+    border:3px solid black;
+    cursor: pointer;
+    list-style-type: none;
+    position:relative;
+    animation-fill-mode: forwards;
+
+}
+#boxy9{
+    animation-delay: 4s;
+    animation-name:move;
+    animation-duration: 3s;
+    width:77px;
+    height:77px;
+    border:3px solid black;
+    cursor: pointer;
+    list-style-type: none;
+    position:relative;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes move{
+    from{left:1000px; background:linear-gradient(30deg,green, rgb(0, 255, 0));}
+    to {left:0px; background:linear-gradient(30deg,green, rgb(0, 255, 0));}
+}
+@keyframes move2{
+    from{left:-1000px; background:linear-gradient(30deg,green, rgb(0, 255, 0));}
+    to {left:0px; background:linear-gradient(30deg,green, rgb(0, 255, 0));}
+}
