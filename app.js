@@ -1,5 +1,4 @@
 const box1 = document.querySelector("#box1");
-// please lord tell me theres a better way of doing this
 const box2 = document.querySelector("#box2");
 const box3 = document.querySelector("#box3");
 const box4 = document.querySelector("#box4");
@@ -8,7 +7,6 @@ const box6 = document.querySelector("#box6");
 const box7 = document.querySelector("#box7");
 const box8 = document.querySelector("#box8");
 const box9 = document.querySelector("#box9");
-
 const placement1 = document.querySelector("#box1")
 const placement2 = document.querySelector("#box2")
 const placement3 = document.querySelector("#box3")
@@ -18,12 +16,9 @@ const placement6 = document.querySelector("#box6")
 const placement7 = document.querySelector("#box7")
 const placement8 = document.querySelector("#box8")
 const placement9 = document.querySelector("#box9")
-// please lord tell me theres a better way of doing this
 const startGame = document.querySelector("#startGame")
-const resetGame = document.querySelector("#resetGame")
 const myTurn = document.querySelector("#myTurn")
 const gameBoard = document.querySelector("#gameBoard")
-const startBox = document.querySelector("#boxy4")
 const player1 = {
     turn:"off"
 }
@@ -42,30 +37,6 @@ function turnSwitch(){
     }
 }
 
-resetGame.addEventListener("click", function (){
-    document.querySelector("#block1").textContent = ""
-    document.querySelector("#block2").textContent = ""
-    document.querySelector("#block3").textContent = ""
-    document.querySelector("#block4").textContent = ""
-    document.querySelector("#block5").textContent = ""
-    document.querySelector("#block6").textContent = ""
-    document.querySelector("#block7").textContent = ""
-    document.querySelector("#block8").textContent = ""
-    document.querySelector("#block9").textContent = ""
-    block1 = "on"
-    block2 = "on"
-    block3 = "on"
-    block4 = "on"
-    block5 = "on"
-    block6 = "on"
-    block7 = "on"
-    block8 = "on"
-    block9 = "on"
-    victory()
-    rounds = 0
-    document.querySelector("#winner").textContent = ""
-    turnSwitch()
-})
 
 // THIS TURNS ON THE GAME
 startGame.addEventListener("click", function(){
