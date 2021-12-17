@@ -12,7 +12,22 @@ html{
     margin: 0  auto;
 
 }
-
+.foreground{
+    font-size:30px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position:relative;
+    width:500px;
+    height:500px;
+    margin-left: auto;
+    margin-right:auto;
+    padding-top:70px;
+    border-radius:20px;
+    background:linear-gradient(30deg,rgb(51, 211, 223), rgb(169, 255, 255));
+    border: 1px solid black;
+    right:125px;
+    bottom:333px;
+    
+}
 #box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9{
     width:77px;
     height:77px;
@@ -59,128 +74,71 @@ html{
     to {border: 3px solid black;}
 }
 
-#boxy1{
+.boxy1{
     animation-name:move;
     animation-duration: 3s;
     width:77px;
     height:77px;
-    border:3px solid black;
-    cursor: pointer;
     list-style-type: none;
     position:relative;
     animation-fill-mode: forwards;
+    opacity:0
 
 }
-#boxy2{
+.boxy2{
     animation-delay: .5s;
-    animation-name:move;
+    animation-name:move2;
     animation-duration: 3s;
     width:77px;
     height:77px;
-    border:3px solid black;
-    cursor: pointer;
     list-style-type: none;
     position:relative;
     animation-fill-mode: forwards;
+    opacity:0
 
 }
-#boxy3{
+.boxy3{
     animation-delay: 1s;
-    animation-name:move;
+    animation-name:move3;
     animation-duration: 3s;
     width:77px;
     height:77px;
-    border:3px solid black;
-    cursor: pointer;
     list-style-type: none;
     position:relative;
     animation-fill-mode: forwards;
+    opacity:0;
 
 }
-#boxy4{
-    animation-delay: 2.5s;
-    animation-name:move2;
-    animation-duration: 3s;
-    width:77px;
-    height:77px;
-    border:3px solid black;
-    cursor: pointer;
-    list-style-type: none;
-    position:relative;
-    animation-fill-mode: forwards;
-
-}
-#boxy5{
-    animation-delay: 2s;
-    animation-name:move2;
-    animation-duration: 3s;
-    width:77px;
-    height:77px;
-    border:3px solid black;
-    cursor: pointer;
-    list-style-type: none;
-    position:relative;
-    animation-fill-mode: forwards;
-
-}
-#boxy6{
-    animation-delay: 1.5s;
-    animation-name:move2;
-    animation-duration: 3s;
-    width:77px;
-    height:77px;
-    border:3px solid black;
-    cursor: pointer;
-    list-style-type: none;
-    position:relative;
-    animation-fill-mode: forwards;
-
-}
-#boxy7{
-    animation-delay: 3s;
-    animation-name:move;
-    animation-duration: 3s;
-    width:77px;
-    height:77px;
-    border:3px solid black;
-    cursor: pointer;
-    list-style-type: none;
-    position:relative;
-    animation-fill-mode: forwards;
-
-}
-#boxy8{
-    animation-delay: 3.5s;
-    animation-name:move;
-    animation-duration: 3s;
-    width:77px;
-    height:77px;
-    border:3px solid black;
-    cursor: pointer;
-    list-style-type: none;
-    position:relative;
-    animation-fill-mode: forwards;
-
-}
-#boxy9{
+.boxy4{
     animation-delay: 4s;
-    animation-name:move;
+    animation-name:fade;
     animation-duration: 3s;
     width:77px;
     height:77px;
-    border:3px solid black;
-    cursor: pointer;
     list-style-type: none;
     position:relative;
     animation-fill-mode: forwards;
+    opacity:0;
+    cursor:pointer;
 
+}
+.boxy4:hover{
+    color:white;
 }
 
 @keyframes move{
-    from{left:1000px; background:linear-gradient(30deg,green, rgb(0, 255, 0));}
-    to {left:0px; background:linear-gradient(30deg,green, rgb(0, 255, 0));}
+    from{left:1000px;opacity:1;}
+    to {left:90px;opacity:1;}
 }
 @keyframes move2{
-    from{left:-1000px; background:linear-gradient(30deg,green, rgb(0, 255, 0));}
-    to {left:0px; background:linear-gradient(30deg,green, rgb(0, 255, 0));}
+    from{left:1000px; bottom:117px;opacity:1;}
+    to {bottom:117px;left:200px;opacity:1;}
+}
+@keyframes move3{
+    from{left:1000px; bottom:236px;opacity:1;}
+    to {bottom:236px;left:335px;opacity:1;}
+}
+@keyframes fade{
+    from{bottom:136px;left:160px;opacity:0;}
+    to {bottom:136px;left:160px;opacity:1;}
 }
