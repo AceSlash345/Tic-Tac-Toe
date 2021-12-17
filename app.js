@@ -23,6 +23,7 @@ const startGame = document.querySelector("#startGame")
 const resetGame = document.querySelector("#resetGame")
 const myTurn = document.querySelector("#myTurn")
 const gameBoard = document.querySelector("#gameBoard")
+const startBox = document.querySelector("#boxy4")
 const player1 = {
     turn:"off"
 }
@@ -40,6 +41,7 @@ function turnSwitch(){
         myTurn.textContent = "A glitch? That's crazy."
     }
 }
+
 resetGame.addEventListener("click", function (){
     document.querySelector("#block1").textContent = ""
     document.querySelector("#block2").textContent = ""
